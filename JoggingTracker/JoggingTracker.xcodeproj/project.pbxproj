@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E7CA51F22494114873B73C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA78500B7C942D88FB5DB5E /* libPods.a */; };
+		CD08AFB219B0678A00C87793 /* PTApiCallCreateJoggingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFB119B0678A00C87793 /* PTApiCallCreateJoggingEntry.m */; };
+		CD08AFB819B06B0100C87793 /* PTUserLoginResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFB519B06B0100C87793 /* PTUserLoginResponseData.m */; };
+		CD08AFB919B06B0100C87793 /* PTUserSignupResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFB719B06B0100C87793 /* PTUserSignupResponseData.m */; };
+		CD08AFBF19B06C9200C87793 /* PTJoggingEntryRequestDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFBC19B06C9200C87793 /* PTJoggingEntryRequestDetails.m */; };
+		CD08AFC019B06C9200C87793 /* PTUserSignupRequestDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFBE19B06C9200C87793 /* PTUserSignupRequestDetails.m */; };
+		CD08AFC319B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFC219B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.m */; };
+		CD08AFC619B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFC519B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.m */; };
+		CD08AFC919B0ACCB00C87793 /* PTSynchronisableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CD08AFC819B0ACCB00C87793 /* PTSynchronisableObject.m */; };
+		CD1E3AED19B5B12100549548 /* PTModelSyncScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3AEC19B5B12100549548 /* PTModelSyncScheduler.m */; };
+		CD1E3AF219B5C1D900549548 /* PTFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3AF019B5C1D900549548 /* PTFilterViewController.m */; };
+		CD1E3AF319B5C1D900549548 /* PTFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD1E3AF119B5C1D900549548 /* PTFilterViewController.xib */; };
+		CD1E3AF619B5C55E00549548 /* PTFilterOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3AF519B5C55E00549548 /* PTFilterOptions.m */; };
+		CD1E3AFA19B5F60200549548 /* PTDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3AF919B5F60200549548 /* PTDateUtils.m */; };
+		CD1E3AFE19B5FB8F00549548 /* PTReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3AFC19B5FB8F00549548 /* PTReportViewController.m */; };
+		CD1E3AFF19B5FB8F00549548 /* PTReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD1E3AFD19B5FB8F00549548 /* PTReportViewController.xib */; };
+		CD1E3B0219B6059400549548 /* PTJoggingEntryReportData.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B0119B6059400549548 /* PTJoggingEntryReportData.m */; };
+		CD1E3B0619B60AF200549548 /* PTReportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B0419B60AF200549548 /* PTReportCell.m */; };
+		CD1E3B0719B60AF200549548 /* PTReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD1E3B0519B60AF200549548 /* PTReportCell.xib */; };
+		CD1E3B0A19B60B1D00549548 /* PTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B0919B60B1D00549548 /* PTCell.m */; };
+		CD1E3B1119B61FBB00549548 /* DateUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B1019B61FBB00549548 /* DateUtilsTests.m */; };
+		CD1E3B1319B623A900549548 /* ValidationUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B1219B623A900549548 /* ValidationUtilsTests.m */; };
+		CD1E3B1519B6261500549548 /* NotificatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B1419B6261500549548 /* NotificatorTests.m */; };
+		CD1E3B1719B6593900549548 /* ApiCallsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3B1619B6593900549548 /* ApiCallsTests.m */; };
+		CD28087E19ACC9AC00EA0131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD28087D19ACC9AC00EA0131 /* Foundation.framework */; };
+		CD28088019ACC9AC00EA0131 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD28087F19ACC9AC00EA0131 /* CoreGraphics.framework */; };
+		CD28088219ACC9AC00EA0131 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD28088119ACC9AC00EA0131 /* UIKit.framework */; };
+		CD28088819ACC9AC00EA0131 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD28088619ACC9AC00EA0131 /* InfoPlist.strings */; };
+		CD28088A19ACC9AC00EA0131 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD28088919ACC9AC00EA0131 /* main.m */; };
+		CD28088E19ACC9AC00EA0131 /* PTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD28088D19ACC9AC00EA0131 /* PTAppDelegate.m */; };
+		CD28089019ACC9AC00EA0131 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD28088F19ACC9AC00EA0131 /* Images.xcassets */; };
+		CD28089719ACC9AC00EA0131 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD28089619ACC9AC00EA0131 /* XCTest.framework */; };
+		CD28089819ACC9AC00EA0131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD28087D19ACC9AC00EA0131 /* Foundation.framework */; };
+		CD28089919ACC9AC00EA0131 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD28088119ACC9AC00EA0131 /* UIKit.framework */; };
+		CD2808A119ACC9AC00EA0131 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD28089F19ACC9AC00EA0131 /* InfoPlist.strings */; };
+		CD2A625819ADBD4E00417B77 /* PTApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A625719ADBD4E00417B77 /* PTApiCall.m */; };
+		CD2A625C19ADBDE600417B77 /* PTApiCallResponseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A625B19ADBDE600417B77 /* PTApiCallResponseResult.m */; };
+		CD2A625F19ADBF2A00417B77 /* PTRemoteRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A625E19ADBF2A00417B77 /* PTRemoteRequestHandler.m */; };
+		CD2A626319ADD34100417B77 /* PTModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A626219ADD34100417B77 /* PTModelController.m */; };
+		CD2A626619ADD35C00417B77 /* PTPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A626519ADD35C00417B77 /* PTPersistenceController.m */; };
+		CD2A626A19ADD76000417B77 /* PTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A626919ADD76000417B77 /* PTConstants.m */; };
+		CD2A626F19ADD95C00417B77 /* PTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A626E19ADD95C00417B77 /* PTLoginController.m */; };
+		CD2A627819ADE22B00417B77 /* PTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A627719ADE22B00417B77 /* PTUser.m */; };
+		CD2A627B19ADE3DB00417B77 /* PTUserDefaultSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A627A19ADE3DB00417B77 /* PTUserDefaultSettings.m */; };
+		CD2A627F19ADE6ED00417B77 /* PTObjectsMappingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A627E19ADE6ED00417B77 /* PTObjectsMappingFactory.m */; };
+		CD2A628519ADF8D700417B77 /* PTApiCallSignupUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A628419ADF8D700417B77 /* PTApiCallSignupUser.m */; };
+		CD2A628819ADF8E400417B77 /* PTApiCallLoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A628719ADF8E400417B77 /* PTApiCallLoginUser.m */; };
+		CD2A628B19ADFE3200417B77 /* PTApiCallsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A628A19ADFE3200417B77 /* PTApiCallsUtils.m */; };
+		CD2A629319AE05AF00417B77 /* PTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A629119AE05AF00417B77 /* PTHomeViewController.m */; };
+		CD2A629419AE05AF00417B77 /* PTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2A629219AE05AF00417B77 /* PTHomeViewController.xib */; };
+		CD2A629719AE0F7C00417B77 /* PTLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A629619AE0F7C00417B77 /* PTLocalization.m */; };
+		CD2A629A19AE10B900417B77 /* PTValidationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A629919AE10B900417B77 /* PTValidationUtils.m */; };
+		CD2A629D19AE1C5D00417B77 /* PTActivityIndicatorHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A629C19AE1C5D00417B77 /* PTActivityIndicatorHUD.m */; };
+		CD2A62A119AE26EB00417B77 /* PTSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2A629F19AE26EB00417B77 /* PTSignupViewController.m */; };
+		CD2A62A219AE26EB00417B77 /* PTSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2A62A019AE26EB00417B77 /* PTSignupViewController.xib */; };
+		CDBD79C619ACD98F007C9B62 /* PTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBD79C419ACD98F007C9B62 /* PTLoginViewController.m */; };
+		CDBD79C719ACD98F007C9B62 /* PTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBD79C519ACD98F007C9B62 /* PTLoginViewController.xib */; };
+		CDBD79CC19ACD9C8007C9B62 /* PTUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBD79CB19ACD9C8007C9B62 /* PTUIUtils.m */; };
+		CDBD79CF19ACDA42007C9B62 /* PTMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBD79CE19ACDA42007C9B62 /* PTMasterViewController.m */; };
+		CDBD79D219ACDAC6007C9B62 /* PTContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBD79D119ACDAC6007C9B62 /* PTContainerViewController.m */; };
+		CDBD79D519ACE0B7007C9B62 /* PTFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBD79D419ACE0B7007C9B62 /* PTFormViewController.m */; };
+		CDBEB06719AF2FF300CF6F72 /* JoggingTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB06519AF2FF300CF6F72 /* JoggingTracker.xcdatamodeld */; };
+		CDBEB06B19AF306900CF6F72 /* PTManagedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB06A19AF306900CF6F72 /* PTManagedUser.m */; };
+		CDBEB06E19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB06D19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.m */; };
+		CDBEB07719AF53A400CF6F72 /* PTRefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB07619AF53A400CF6F72 /* PTRefreshTableHeaderView.m */; };
+		CDBEB08719AF694B00CF6F72 /* PTManagedSynchronisableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB08619AF694B00CF6F72 /* PTManagedSynchronisableObject.m */; };
+		CDBEB09019AF698800CF6F72 /* PTManagedJoggingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB08F19AF698800CF6F72 /* PTManagedJoggingEntry.m */; };
+		CDBEB09319AF69DF00CF6F72 /* PTJoggingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB09219AF69DF00CF6F72 /* PTJoggingEntry.m */; };
+		CDBEB09619AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB09519AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.m */; };
+		CDBEB09D19AF7F2A00CF6F72 /* PTJoggingEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB09B19AF7F2A00CF6F72 /* PTJoggingEntryCell.m */; };
+		CDBEB09E19AF7F2A00CF6F72 /* PTJoggingEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBEB09C19AF7F2A00CF6F72 /* PTJoggingEntryCell.xib */; };
+		CDBEB0A319AF89D800CF6F72 /* PTNotificator.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB0A219AF89D800CF6F72 /* PTNotificator.m */; };
+		CDBEB0A819AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB0A619AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.m */; };
+		CDBEB0A919AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBEB0A719AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.xib */; };
+		CDBEB0AC19AFAA3300CF6F72 /* PTGUIDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB0AB19AFAA3300CF6F72 /* PTGUIDUtils.m */; };
+		CDBEB0B019AFD28C00CF6F72 /* PTTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB0AF19AFD28C00CF6F72 /* PTTimePickerView.m */; };
+		CDBEB0B319AFD29B00CF6F72 /* PTDistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB0B219AFD29B00CF6F72 /* PTDistancePickerView.m */; };
+		CDBEB0B619AFD4CA00CF6F72 /* PTStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBEB0B519AFD4CA00CF6F72 /* PTStringUtils.m */; };
+		CDF3B8A119B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8A019B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.m */; };
+		CDF3B8A919B48C3000D3BA85 /* PTJoggingEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8A719B48C3000D3BA85 /* PTJoggingEntryViewController.m */; };
+		CDF3B8AA19B48C3000D3BA85 /* PTJoggingEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF3B8A819B48C3000D3BA85 /* PTJoggingEntryViewController.xib */; };
+		CDF3B8AD19B48CF500D3BA85 /* PTTitledElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8AC19B48CF500D3BA85 /* PTTitledElementView.m */; };
+		CDF3B8AF19B48D0300D3BA85 /* PTTitledElementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF3B8AE19B48D0300D3BA85 /* PTTitledElementView.xib */; };
+		CDF3B8B519B4C98100D3BA85 /* PTApiCallBatchOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8B419B4C98100D3BA85 /* PTApiCallBatchOperations.m */; };
+		CDF3B8B819B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8B719B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.m */; };
+		CDF3B8BB19B4D19D00D3BA85 /* PTBatchOperationRequestDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8BA19B4D19D00D3BA85 /* PTBatchOperationRequestDetails.m */; };
+		CDF3B8C119B5023C00D3BA85 /* PTErrorResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF3B8C019B5023C00D3BA85 /* PTErrorResponseData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD28089A19ACC9AC00EA0131 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD28087219ACC9AC00EA0131 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD28087919ACC9AC00EA0131;
+			remoteInfo = JoggingTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F202BEF65B24E838B9D07D3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CD08AFB019B0678A00C87793 /* PTApiCallCreateJoggingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallCreateJoggingEntry.h; sourceTree = "<group>"; };
+		CD08AFB119B0678A00C87793 /* PTApiCallCreateJoggingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallCreateJoggingEntry.m; sourceTree = "<group>"; };
+		CD08AFB419B06B0100C87793 /* PTUserLoginResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUserLoginResponseData.h; sourceTree = "<group>"; };
+		CD08AFB519B06B0100C87793 /* PTUserLoginResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUserLoginResponseData.m; sourceTree = "<group>"; };
+		CD08AFB619B06B0100C87793 /* PTUserSignupResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUserSignupResponseData.h; sourceTree = "<group>"; };
+		CD08AFB719B06B0100C87793 /* PTUserSignupResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUserSignupResponseData.m; sourceTree = "<group>"; };
+		CD08AFBB19B06C9200C87793 /* PTJoggingEntryRequestDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJoggingEntryRequestDetails.h; sourceTree = "<group>"; };
+		CD08AFBC19B06C9200C87793 /* PTJoggingEntryRequestDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJoggingEntryRequestDetails.m; sourceTree = "<group>"; };
+		CD08AFBD19B06C9200C87793 /* PTUserSignupRequestDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUserSignupRequestDetails.h; sourceTree = "<group>"; };
+		CD08AFBE19B06C9200C87793 /* PTUserSignupRequestDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUserSignupRequestDetails.m; sourceTree = "<group>"; };
+		CD08AFC119B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCreatedRemoteObjectResponseData.h; sourceTree = "<group>"; };
+		CD08AFC219B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCreatedRemoteObjectResponseData.m; sourceTree = "<group>"; };
+		CD08AFC419B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUpdatedRemoteObjectResponseData.h; sourceTree = "<group>"; };
+		CD08AFC519B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUpdatedRemoteObjectResponseData.m; sourceTree = "<group>"; };
+		CD08AFC719B0ACCB00C87793 /* PTSynchronisableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSynchronisableObject.h; sourceTree = "<group>"; };
+		CD08AFC819B0ACCB00C87793 /* PTSynchronisableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSynchronisableObject.m; sourceTree = "<group>"; };
+		CD1E3AEB19B5B12100549548 /* PTModelSyncScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTModelSyncScheduler.h; sourceTree = "<group>"; };
+		CD1E3AEC19B5B12100549548 /* PTModelSyncScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTModelSyncScheduler.m; sourceTree = "<group>"; };
+		CD1E3AEF19B5C1D900549548 /* PTFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFilterViewController.h; sourceTree = "<group>"; };
+		CD1E3AF019B5C1D900549548 /* PTFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFilterViewController.m; sourceTree = "<group>"; };
+		CD1E3AF119B5C1D900549548 /* PTFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTFilterViewController.xib; sourceTree = "<group>"; };
+		CD1E3AF419B5C55E00549548 /* PTFilterOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFilterOptions.h; sourceTree = "<group>"; };
+		CD1E3AF519B5C55E00549548 /* PTFilterOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFilterOptions.m; sourceTree = "<group>"; };
+		CD1E3AF819B5F60200549548 /* PTDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDateUtils.h; sourceTree = "<group>"; };
+		CD1E3AF919B5F60200549548 /* PTDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDateUtils.m; sourceTree = "<group>"; };
+		CD1E3AFB19B5FB8F00549548 /* PTReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTReportViewController.h; sourceTree = "<group>"; };
+		CD1E3AFC19B5FB8F00549548 /* PTReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTReportViewController.m; sourceTree = "<group>"; };
+		CD1E3AFD19B5FB8F00549548 /* PTReportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTReportViewController.xib; sourceTree = "<group>"; };
+		CD1E3B0019B6059400549548 /* PTJoggingEntryReportData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJoggingEntryReportData.h; sourceTree = "<group>"; };
+		CD1E3B0119B6059400549548 /* PTJoggingEntryReportData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJoggingEntryReportData.m; sourceTree = "<group>"; };
+		CD1E3B0319B60AF200549548 /* PTReportCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTReportCell.h; sourceTree = "<group>"; };
+		CD1E3B0419B60AF200549548 /* PTReportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTReportCell.m; sourceTree = "<group>"; };
+		CD1E3B0519B60AF200549548 /* PTReportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTReportCell.xib; sourceTree = "<group>"; };
+		CD1E3B0819B60B1D00549548 /* PTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTCell.h; sourceTree = "<group>"; };
+		CD1E3B0919B60B1D00549548 /* PTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTCell.m; sourceTree = "<group>"; };
+		CD1E3B1019B61FBB00549548 /* DateUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtilsTests.m; sourceTree = "<group>"; };
+		CD1E3B1219B623A900549548 /* ValidationUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationUtilsTests.m; sourceTree = "<group>"; };
+		CD1E3B1419B6261500549548 /* NotificatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificatorTests.m; sourceTree = "<group>"; };
+		CD1E3B1619B6593900549548 /* ApiCallsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiCallsTests.m; sourceTree = "<group>"; };
+		CD28087A19ACC9AC00EA0131 /* JoggingTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoggingTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD28087D19ACC9AC00EA0131 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD28087F19ACC9AC00EA0131 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD28088119ACC9AC00EA0131 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD28088519ACC9AC00EA0131 /* JoggingTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoggingTracker-Info.plist"; sourceTree = "<group>"; };
+		CD28088719ACC9AC00EA0131 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD28088919ACC9AC00EA0131 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD28088B19ACC9AC00EA0131 /* JoggingTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JoggingTracker-Prefix.pch"; sourceTree = "<group>"; };
+		CD28088C19ACC9AC00EA0131 /* PTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTAppDelegate.h; sourceTree = "<group>"; };
+		CD28088D19ACC9AC00EA0131 /* PTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTAppDelegate.m; sourceTree = "<group>"; };
+		CD28088F19ACC9AC00EA0131 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CD28089519ACC9AC00EA0131 /* JoggingTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoggingTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD28089619ACC9AC00EA0131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CD28089E19ACC9AC00EA0131 /* JoggingTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoggingTrackerTests-Info.plist"; sourceTree = "<group>"; };
+		CD2808A019ACC9AC00EA0131 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD2A625619ADBD4E00417B77 /* PTApiCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCall.h; sourceTree = "<group>"; };
+		CD2A625719ADBD4E00417B77 /* PTApiCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCall.m; sourceTree = "<group>"; };
+		CD2A625A19ADBDE600417B77 /* PTApiCallResponseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallResponseResult.h; sourceTree = "<group>"; };
+		CD2A625B19ADBDE600417B77 /* PTApiCallResponseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallResponseResult.m; sourceTree = "<group>"; };
+		CD2A625D19ADBF2A00417B77 /* PTRemoteRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRemoteRequestHandler.h; sourceTree = "<group>"; };
+		CD2A625E19ADBF2A00417B77 /* PTRemoteRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRemoteRequestHandler.m; sourceTree = "<group>"; };
+		CD2A626119ADD34100417B77 /* PTModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTModelController.h; sourceTree = "<group>"; };
+		CD2A626219ADD34100417B77 /* PTModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTModelController.m; sourceTree = "<group>"; };
+		CD2A626419ADD35C00417B77 /* PTPersistenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPersistenceController.h; sourceTree = "<group>"; };
+		CD2A626519ADD35C00417B77 /* PTPersistenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPersistenceController.m; sourceTree = "<group>"; };
+		CD2A626719ADD71900417B77 /* PTMacroUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTMacroUtils.h; sourceTree = "<group>"; };
+		CD2A626819ADD76000417B77 /* PTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTConstants.h; sourceTree = "<group>"; };
+		CD2A626919ADD76000417B77 /* PTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTConstants.m; sourceTree = "<group>"; };
+		CD2A626D19ADD95C00417B77 /* PTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLoginController.h; sourceTree = "<group>"; };
+		CD2A626E19ADD95C00417B77 /* PTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLoginController.m; sourceTree = "<group>"; };
+		CD2A627619ADE22B00417B77 /* PTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUser.h; sourceTree = "<group>"; };
+		CD2A627719ADE22B00417B77 /* PTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUser.m; sourceTree = "<group>"; };
+		CD2A627919ADE3DB00417B77 /* PTUserDefaultSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUserDefaultSettings.h; sourceTree = "<group>"; };
+		CD2A627A19ADE3DB00417B77 /* PTUserDefaultSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUserDefaultSettings.m; sourceTree = "<group>"; };
+		CD2A627D19ADE6ED00417B77 /* PTObjectsMappingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTObjectsMappingFactory.h; sourceTree = "<group>"; };
+		CD2A627E19ADE6ED00417B77 /* PTObjectsMappingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTObjectsMappingFactory.m; sourceTree = "<group>"; };
+		CD2A628319ADF8D700417B77 /* PTApiCallSignupUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallSignupUser.h; sourceTree = "<group>"; };
+		CD2A628419ADF8D700417B77 /* PTApiCallSignupUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallSignupUser.m; sourceTree = "<group>"; };
+		CD2A628619ADF8E400417B77 /* PTApiCallLoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallLoginUser.h; sourceTree = "<group>"; };
+		CD2A628719ADF8E400417B77 /* PTApiCallLoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallLoginUser.m; sourceTree = "<group>"; };
+		CD2A628919ADFE3200417B77 /* PTApiCallsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallsUtils.h; sourceTree = "<group>"; };
+		CD2A628A19ADFE3200417B77 /* PTApiCallsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallsUtils.m; sourceTree = "<group>"; };
+		CD2A629019AE05AF00417B77 /* PTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHomeViewController.h; sourceTree = "<group>"; };
+		CD2A629119AE05AF00417B77 /* PTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHomeViewController.m; sourceTree = "<group>"; };
+		CD2A629219AE05AF00417B77 /* PTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTHomeViewController.xib; sourceTree = "<group>"; };
+		CD2A629519AE0F7C00417B77 /* PTLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLocalization.h; sourceTree = "<group>"; };
+		CD2A629619AE0F7C00417B77 /* PTLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLocalization.m; sourceTree = "<group>"; };
+		CD2A629819AE10B900417B77 /* PTValidationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTValidationUtils.h; sourceTree = "<group>"; };
+		CD2A629919AE10B900417B77 /* PTValidationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTValidationUtils.m; sourceTree = "<group>"; };
+		CD2A629B19AE1C5D00417B77 /* PTActivityIndicatorHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTActivityIndicatorHUD.h; sourceTree = "<group>"; };
+		CD2A629C19AE1C5D00417B77 /* PTActivityIndicatorHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTActivityIndicatorHUD.m; sourceTree = "<group>"; };
+		CD2A629E19AE26EB00417B77 /* PTSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTSignupViewController.h; sourceTree = "<group>"; };
+		CD2A629F19AE26EB00417B77 /* PTSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTSignupViewController.m; sourceTree = "<group>"; };
+		CD2A62A019AE26EB00417B77 /* PTSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTSignupViewController.xib; sourceTree = "<group>"; };
+		CDBD79C219ACD94D007C9B62 /* PTNibLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNibLoading.h; sourceTree = "<group>"; };
+		CDBD79C319ACD98F007C9B62 /* PTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLoginViewController.h; sourceTree = "<group>"; };
+		CDBD79C419ACD98F007C9B62 /* PTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLoginViewController.m; sourceTree = "<group>"; };
+		CDBD79C519ACD98F007C9B62 /* PTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTLoginViewController.xib; sourceTree = "<group>"; };
+		CDBD79CA19ACD9C8007C9B62 /* PTUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTUIUtils.h; sourceTree = "<group>"; };
+		CDBD79CB19ACD9C8007C9B62 /* PTUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTUIUtils.m; sourceTree = "<group>"; };
+		CDBD79CD19ACDA42007C9B62 /* PTMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMasterViewController.h; sourceTree = "<group>"; };
+		CDBD79CE19ACDA42007C9B62 /* PTMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTMasterViewController.m; sourceTree = "<group>"; };
+		CDBD79D019ACDAC6007C9B62 /* PTContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTContainerViewController.h; sourceTree = "<group>"; };
+		CDBD79D119ACDAC6007C9B62 /* PTContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTContainerViewController.m; sourceTree = "<group>"; };
+		CDBD79D319ACE0B7007C9B62 /* PTFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTFormViewController.h; sourceTree = "<group>"; };
+		CDBD79D419ACE0B7007C9B62 /* PTFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTFormViewController.m; sourceTree = "<group>"; };
+		CDBEB06619AF2FF300CF6F72 /* JoggingTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JoggingTracker.xcdatamodel; sourceTree = "<group>"; };
+		CDBEB06919AF306900CF6F72 /* PTManagedUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTManagedUser.h; sourceTree = "<group>"; };
+		CDBEB06A19AF306900CF6F72 /* PTManagedUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTManagedUser.m; sourceTree = "<group>"; };
+		CDBEB06C19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTPersistenceController+TransientObjectsSupport.h"; sourceTree = "<group>"; };
+		CDBEB06D19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PTPersistenceController+TransientObjectsSupport.m"; sourceTree = "<group>"; };
+		CDBEB07019AF444B00CF6F72 /* PTNotificationsNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNotificationsNames.h; sourceTree = "<group>"; };
+		CDBEB07519AF53A400CF6F72 /* PTRefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTRefreshTableHeaderView.h; sourceTree = "<group>"; };
+		CDBEB07619AF53A400CF6F72 /* PTRefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTRefreshTableHeaderView.m; sourceTree = "<group>"; };
+		CDBEB08119AF5AF700CF6F72 /* PTManagedObjectSyncStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTManagedObjectSyncStatus.h; sourceTree = "<group>"; };
+		CDBEB08519AF694B00CF6F72 /* PTManagedSynchronisableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTManagedSynchronisableObject.h; sourceTree = "<group>"; };
+		CDBEB08619AF694B00CF6F72 /* PTManagedSynchronisableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTManagedSynchronisableObject.m; sourceTree = "<group>"; };
+		CDBEB08E19AF698800CF6F72 /* PTManagedJoggingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTManagedJoggingEntry.h; sourceTree = "<group>"; };
+		CDBEB08F19AF698800CF6F72 /* PTManagedJoggingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTManagedJoggingEntry.m; sourceTree = "<group>"; };
+		CDBEB09119AF69DF00CF6F72 /* PTJoggingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJoggingEntry.h; sourceTree = "<group>"; };
+		CDBEB09219AF69DF00CF6F72 /* PTJoggingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJoggingEntry.m; sourceTree = "<group>"; };
+		CDBEB09419AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallFetchJoggingEntries.h; sourceTree = "<group>"; };
+		CDBEB09519AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallFetchJoggingEntries.m; sourceTree = "<group>"; };
+		CDBEB09A19AF7F2A00CF6F72 /* PTJoggingEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJoggingEntryCell.h; sourceTree = "<group>"; };
+		CDBEB09B19AF7F2A00CF6F72 /* PTJoggingEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJoggingEntryCell.m; sourceTree = "<group>"; };
+		CDBEB09C19AF7F2A00CF6F72 /* PTJoggingEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTJoggingEntryCell.xib; sourceTree = "<group>"; };
+		CDBEB0A119AF89D800CF6F72 /* PTNotificator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTNotificator.h; sourceTree = "<group>"; };
+		CDBEB0A219AF89D800CF6F72 /* PTNotificator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTNotificator.m; sourceTree = "<group>"; };
+		CDBEB0A519AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJoggingEntryEditViewController.h; sourceTree = "<group>"; };
+		CDBEB0A619AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJoggingEntryEditViewController.m; sourceTree = "<group>"; };
+		CDBEB0A719AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTJoggingEntryEditViewController.xib; sourceTree = "<group>"; };
+		CDBEB0AA19AFAA3300CF6F72 /* PTGUIDUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTGUIDUtils.h; sourceTree = "<group>"; };
+		CDBEB0AB19AFAA3300CF6F72 /* PTGUIDUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTGUIDUtils.m; sourceTree = "<group>"; };
+		CDBEB0AE19AFD28C00CF6F72 /* PTTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTimePickerView.h; sourceTree = "<group>"; };
+		CDBEB0AF19AFD28C00CF6F72 /* PTTimePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTimePickerView.m; sourceTree = "<group>"; };
+		CDBEB0B119AFD29B00CF6F72 /* PTDistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDistancePickerView.h; sourceTree = "<group>"; };
+		CDBEB0B219AFD29B00CF6F72 /* PTDistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDistancePickerView.m; sourceTree = "<group>"; };
+		CDBEB0B419AFD4CA00CF6F72 /* PTStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTStringUtils.h; sourceTree = "<group>"; };
+		CDBEB0B519AFD4CA00CF6F72 /* PTStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTStringUtils.m; sourceTree = "<group>"; };
+		CDF3B89F19B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallUpdateJoggingEntry.h; sourceTree = "<group>"; };
+		CDF3B8A019B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallUpdateJoggingEntry.m; sourceTree = "<group>"; };
+		CDF3B8A619B48C3000D3BA85 /* PTJoggingEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTJoggingEntryViewController.h; sourceTree = "<group>"; };
+		CDF3B8A719B48C3000D3BA85 /* PTJoggingEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTJoggingEntryViewController.m; sourceTree = "<group>"; };
+		CDF3B8A819B48C3000D3BA85 /* PTJoggingEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTJoggingEntryViewController.xib; sourceTree = "<group>"; };
+		CDF3B8AB19B48CF500D3BA85 /* PTTitledElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTitledElementView.h; sourceTree = "<group>"; };
+		CDF3B8AC19B48CF500D3BA85 /* PTTitledElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTitledElementView.m; sourceTree = "<group>"; };
+		CDF3B8AE19B48D0300D3BA85 /* PTTitledElementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTTitledElementView.xib; sourceTree = "<group>"; };
+		CDF3B8B019B4A3F800D3BA85 /* PTNotificationMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTNotificationMacros.h; sourceTree = "<group>"; };
+		CDF3B8B119B4A53B00D3BA85 /* PTModelSyncStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTModelSyncStatus.h; sourceTree = "<group>"; };
+		CDF3B8B319B4C98100D3BA85 /* PTApiCallBatchOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallBatchOperations.h; sourceTree = "<group>"; };
+		CDF3B8B419B4C98100D3BA85 /* PTApiCallBatchOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallBatchOperations.m; sourceTree = "<group>"; };
+		CDF3B8B619B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTApiCallBatchOperationConfiguration.h; sourceTree = "<group>"; };
+		CDF3B8B719B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTApiCallBatchOperationConfiguration.m; sourceTree = "<group>"; };
+		CDF3B8B919B4D19D00D3BA85 /* PTBatchOperationRequestDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTBatchOperationRequestDetails.h; sourceTree = "<group>"; };
+		CDF3B8BA19B4D19D00D3BA85 /* PTBatchOperationRequestDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTBatchOperationRequestDetails.m; sourceTree = "<group>"; };
+		CDF3B8BF19B5023C00D3BA85 /* PTErrorResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTErrorResponseData.h; sourceTree = "<group>"; };
+		CDF3B8C019B5023C00D3BA85 /* PTErrorResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTErrorResponseData.m; sourceTree = "<group>"; };
+		FEA78500B7C942D88FB5DB5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD28087719ACC9AC00EA0131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD28088019ACC9AC00EA0131 /* CoreGraphics.framework in Frameworks */,
+				CD28088219ACC9AC00EA0131 /* UIKit.framework in Frameworks */,
+				CD28087E19ACC9AC00EA0131 /* Foundation.framework in Frameworks */,
+				3E7CA51F22494114873B73C6 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD28089219ACC9AC00EA0131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD28089719ACC9AC00EA0131 /* XCTest.framework in Frameworks */,
+				CD28089919ACC9AC00EA0131 /* UIKit.framework in Frameworks */,
+				CD28089819ACC9AC00EA0131 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD08AFB319B069BF00C87793 /* ResponsesData */ = {
+			isa = PBXGroup;
+			children = (
+				CD08AFC119B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.h */,
+				CD08AFC219B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.m */,
+				CD08AFC419B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.h */,
+				CD08AFC519B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.m */,
+				CD08AFB419B06B0100C87793 /* PTUserLoginResponseData.h */,
+				CD08AFB519B06B0100C87793 /* PTUserLoginResponseData.m */,
+				CD08AFB619B06B0100C87793 /* PTUserSignupResponseData.h */,
+				CD08AFB719B06B0100C87793 /* PTUserSignupResponseData.m */,
+				CDF3B8BF19B5023C00D3BA85 /* PTErrorResponseData.h */,
+				CDF3B8C019B5023C00D3BA85 /* PTErrorResponseData.m */,
+			);
+			name = ResponsesData;
+			sourceTree = "<group>";
+		};
+		CD08AFBA19B06BB200C87793 /* RequestsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CD08AFBD19B06C9200C87793 /* PTUserSignupRequestDetails.h */,
+				CD08AFBE19B06C9200C87793 /* PTUserSignupRequestDetails.m */,
+				CD08AFBB19B06C9200C87793 /* PTJoggingEntryRequestDetails.h */,
+				CD08AFBC19B06C9200C87793 /* PTJoggingEntryRequestDetails.m */,
+				CDF3B8B919B4D19D00D3BA85 /* PTBatchOperationRequestDetails.h */,
+				CDF3B8BA19B4D19D00D3BA85 /* PTBatchOperationRequestDetails.m */,
+			);
+			name = RequestsDetails;
+			sourceTree = "<group>";
+		};
+		CD1E3AEE19B5C1BF00549548 /* FilterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E3AEF19B5C1D900549548 /* PTFilterViewController.h */,
+				CD1E3AF019B5C1D900549548 /* PTFilterViewController.m */,
+				CD1E3AF119B5C1D900549548 /* PTFilterViewController.xib */,
+			);
+			name = FilterScreen;
+			sourceTree = "<group>";
+		};
+		CD1E3AF719B5ECD300549548 /* ReportScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E3AFB19B5FB8F00549548 /* PTReportViewController.h */,
+				CD1E3AFC19B5FB8F00549548 /* PTReportViewController.m */,
+				CD1E3AFD19B5FB8F00549548 /* PTReportViewController.xib */,
+				CD1E3B0319B60AF200549548 /* PTReportCell.h */,
+				CD1E3B0419B60AF200549548 /* PTReportCell.m */,
+				CD1E3B0519B60AF200549548 /* PTReportCell.xib */,
+			);
+			name = ReportScreen;
+			sourceTree = "<group>";
+		};
+		CD28087119ACC9AC00EA0131 = {
+			isa = PBXGroup;
+			children = (
+				CD28088319ACC9AC00EA0131 /* JoggingTracker */,
+				CD28089C19ACC9AC00EA0131 /* JoggingTrackerTests */,
+				CD28087C19ACC9AC00EA0131 /* Frameworks */,
+				CD28087B19ACC9AC00EA0131 /* Products */,
+				3F202BEF65B24E838B9D07D3 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		CD28087B19ACC9AC00EA0131 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD28087A19ACC9AC00EA0131 /* JoggingTracker.app */,
+				CD28089519ACC9AC00EA0131 /* JoggingTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD28087C19ACC9AC00EA0131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD28087D19ACC9AC00EA0131 /* Foundation.framework */,
+				CD28087F19ACC9AC00EA0131 /* CoreGraphics.framework */,
+				CD28088119ACC9AC00EA0131 /* UIKit.framework */,
+				CD28089619ACC9AC00EA0131 /* XCTest.framework */,
+				FEA78500B7C942D88FB5DB5E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD28088319ACC9AC00EA0131 /* JoggingTracker */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD79BF19ACD91D007C9B62 /* Model */,
+				CD2A625319ADBCCC00417B77 /* Network */,
+				CDBD79C019ACD925007C9B62 /* UI */,
+				CDBD79C919ACD9B5007C9B62 /* Utils */,
+				CD2A626819ADD76000417B77 /* PTConstants.h */,
+				CD2A626919ADD76000417B77 /* PTConstants.m */,
+				CD28088C19ACC9AC00EA0131 /* PTAppDelegate.h */,
+				CD28088D19ACC9AC00EA0131 /* PTAppDelegate.m */,
+				CD28088F19ACC9AC00EA0131 /* Images.xcassets */,
+				CD28088419ACC9AC00EA0131 /* Supporting Files */,
+			);
+			path = JoggingTracker;
+			sourceTree = "<group>";
+		};
+		CD28088419ACC9AC00EA0131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD28088519ACC9AC00EA0131 /* JoggingTracker-Info.plist */,
+				CD28088619ACC9AC00EA0131 /* InfoPlist.strings */,
+				CD28088919ACC9AC00EA0131 /* main.m */,
+				CD28088B19ACC9AC00EA0131 /* JoggingTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD28089C19ACC9AC00EA0131 /* JoggingTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD1E3B1019B61FBB00549548 /* DateUtilsTests.m */,
+				CD1E3B1219B623A900549548 /* ValidationUtilsTests.m */,
+				CD1E3B1419B6261500549548 /* NotificatorTests.m */,
+				CD1E3B1619B6593900549548 /* ApiCallsTests.m */,
+				CD28089D19ACC9AC00EA0131 /* Supporting Files */,
+			);
+			path = JoggingTrackerTests;
+			sourceTree = "<group>";
+		};
+		CD28089D19ACC9AC00EA0131 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD28089E19ACC9AC00EA0131 /* JoggingTrackerTests-Info.plist */,
+				CD28089F19ACC9AC00EA0131 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD2A625319ADBCCC00417B77 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A625D19ADBF2A00417B77 /* PTRemoteRequestHandler.h */,
+				CD2A625E19ADBF2A00417B77 /* PTRemoteRequestHandler.m */,
+				CD2A625519ADBD3A00417B77 /* ApiCalls */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CD2A625519ADBD3A00417B77 /* ApiCalls */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A626019ADBFB300417B77 /* Base */,
+				CD2A627C19ADE6D800417B77 /* Mapping */,
+				CD08AFBA19B06BB200C87793 /* RequestsDetails */,
+				CD08AFB319B069BF00C87793 /* ResponsesData */,
+				CD2A628319ADF8D700417B77 /* PTApiCallSignupUser.h */,
+				CD2A628419ADF8D700417B77 /* PTApiCallSignupUser.m */,
+				CD2A628619ADF8E400417B77 /* PTApiCallLoginUser.h */,
+				CD2A628719ADF8E400417B77 /* PTApiCallLoginUser.m */,
+				CDBEB09419AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.h */,
+				CDBEB09519AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.m */,
+				CD08AFB019B0678A00C87793 /* PTApiCallCreateJoggingEntry.h */,
+				CD08AFB119B0678A00C87793 /* PTApiCallCreateJoggingEntry.m */,
+				CDF3B89F19B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.h */,
+				CDF3B8A019B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.m */,
+			);
+			name = ApiCalls;
+			sourceTree = "<group>";
+		};
+		CD2A626019ADBFB300417B77 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CDF3B8B219B4C94B00D3BA85 /* BatchOperations */,
+				CD2A625619ADBD4E00417B77 /* PTApiCall.h */,
+				CD2A625719ADBD4E00417B77 /* PTApiCall.m */,
+				CD2A625A19ADBDE600417B77 /* PTApiCallResponseResult.h */,
+				CD2A625B19ADBDE600417B77 /* PTApiCallResponseResult.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		CD2A626B19ADD93600417B77 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A626D19ADD95C00417B77 /* PTLoginController.h */,
+				CD2A626E19ADD95C00417B77 /* PTLoginController.m */,
+				CD2A627619ADE22B00417B77 /* PTUser.h */,
+				CD2A627719ADE22B00417B77 /* PTUser.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CD2A626C19ADD93F00417B77 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEB06819AF2FF900CF6F72 /* ManagedObjects */,
+				CDBEB08119AF5AF700CF6F72 /* PTManagedObjectSyncStatus.h */,
+				CD2A626419ADD35C00417B77 /* PTPersistenceController.h */,
+				CD2A626519ADD35C00417B77 /* PTPersistenceController.m */,
+				CDBEB06C19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.h */,
+				CDBEB06D19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.m */,
+				CDBEB06519AF2FF300CF6F72 /* JoggingTracker.xcdatamodeld */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		CD2A627C19ADE6D800417B77 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A627D19ADE6ED00417B77 /* PTObjectsMappingFactory.h */,
+				CD2A627E19ADE6ED00417B77 /* PTObjectsMappingFactory.m */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		CD2A628F19AE054A00417B77 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A629019AE05AF00417B77 /* PTHomeViewController.h */,
+				CD2A629119AE05AF00417B77 /* PTHomeViewController.m */,
+				CD2A629219AE05AF00417B77 /* PTHomeViewController.xib */,
+				CDBEB09A19AF7F2A00CF6F72 /* PTJoggingEntryCell.h */,
+				CDBEB09B19AF7F2A00CF6F72 /* PTJoggingEntryCell.m */,
+				CDBEB09C19AF7F2A00CF6F72 /* PTJoggingEntryCell.xib */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		CDBD79BF19ACD91D007C9B62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD2A626C19ADD93F00417B77 /* Persistence */,
+				CD2A626B19ADD93600417B77 /* Login */,
+				CDBEB0A019AF884600CF6F72 /* Observing */,
+				CD08AFC719B0ACCB00C87793 /* PTSynchronisableObject.h */,
+				CD08AFC819B0ACCB00C87793 /* PTSynchronisableObject.m */,
+				CDF3B8B119B4A53B00D3BA85 /* PTModelSyncStatus.h */,
+				CDBEB09119AF69DF00CF6F72 /* PTJoggingEntry.h */,
+				CDBEB09219AF69DF00CF6F72 /* PTJoggingEntry.m */,
+				CD2A626119ADD34100417B77 /* PTModelController.h */,
+				CD2A626219ADD34100417B77 /* PTModelController.m */,
+				CD1E3AEB19B5B12100549548 /* PTModelSyncScheduler.h */,
+				CD1E3AEC19B5B12100549548 /* PTModelSyncScheduler.m */,
+				CD1E3AF419B5C55E00549548 /* PTFilterOptions.h */,
+				CD1E3AF519B5C55E00549548 /* PTFilterOptions.m */,
+				CD1E3B0019B6059400549548 /* PTJoggingEntryReportData.h */,
+				CD1E3B0119B6059400549548 /* PTJoggingEntryReportData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDBD79C019ACD925007C9B62 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD79C219ACD94D007C9B62 /* PTNibLoading.h */,
+				CDBD79D019ACDAC6007C9B62 /* PTContainerViewController.h */,
+				CDBD79D119ACDAC6007C9B62 /* PTContainerViewController.m */,
+				CDBD79CD19ACDA42007C9B62 /* PTMasterViewController.h */,
+				CDBD79CE19ACDA42007C9B62 /* PTMasterViewController.m */,
+				CDBD79D319ACE0B7007C9B62 /* PTFormViewController.h */,
+				CDBD79D419ACE0B7007C9B62 /* PTFormViewController.m */,
+				CD2A629B19AE1C5D00417B77 /* PTActivityIndicatorHUD.h */,
+				CD2A629C19AE1C5D00417B77 /* PTActivityIndicatorHUD.m */,
+				CD1E3B0819B60B1D00549548 /* PTCell.h */,
+				CD1E3B0919B60B1D00549548 /* PTCell.m */,
+				CDBEB07319AF536300CF6F72 /* PullToRefresh */,
+				CDBEB0AD19AFD17F00CF6F72 /* PickerViews */,
+				CDBD79C819ACD99D007C9B62 /* LoginScreen */,
+				CD2A628F19AE054A00417B77 /* HomeScreen */,
+				CD1E3AEE19B5C1BF00549548 /* FilterScreen */,
+				CD1E3AF719B5ECD300549548 /* ReportScreen */,
+				CDBEB0A419AF9E1400CF6F72 /* JoggingEntryScreens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CDBD79C819ACD99D007C9B62 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD79C319ACD98F007C9B62 /* PTLoginViewController.h */,
+				CDBD79C419ACD98F007C9B62 /* PTLoginViewController.m */,
+				CDBD79C519ACD98F007C9B62 /* PTLoginViewController.xib */,
+				CD2A629E19AE26EB00417B77 /* PTSignupViewController.h */,
+				CD2A629F19AE26EB00417B77 /* PTSignupViewController.m */,
+				CD2A62A019AE26EB00417B77 /* PTSignupViewController.xib */,
+			);
+			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		CDBD79C919ACD9B5007C9B62 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDBD79CA19ACD9C8007C9B62 /* PTUIUtils.h */,
+				CDBD79CB19ACD9C8007C9B62 /* PTUIUtils.m */,
+				CD2A627919ADE3DB00417B77 /* PTUserDefaultSettings.h */,
+				CD2A627A19ADE3DB00417B77 /* PTUserDefaultSettings.m */,
+				CD2A628919ADFE3200417B77 /* PTApiCallsUtils.h */,
+				CD2A628A19ADFE3200417B77 /* PTApiCallsUtils.m */,
+				CD2A629519AE0F7C00417B77 /* PTLocalization.h */,
+				CD2A629619AE0F7C00417B77 /* PTLocalization.m */,
+				CD2A629819AE10B900417B77 /* PTValidationUtils.h */,
+				CD2A629919AE10B900417B77 /* PTValidationUtils.m */,
+				CDBEB0AA19AFAA3300CF6F72 /* PTGUIDUtils.h */,
+				CDBEB0AB19AFAA3300CF6F72 /* PTGUIDUtils.m */,
+				CDBEB0B419AFD4CA00CF6F72 /* PTStringUtils.h */,
+				CDBEB0B519AFD4CA00CF6F72 /* PTStringUtils.m */,
+				CD1E3AF819B5F60200549548 /* PTDateUtils.h */,
+				CD1E3AF919B5F60200549548 /* PTDateUtils.m */,
+				CD2A626719ADD71900417B77 /* PTMacroUtils.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDBEB06819AF2FF900CF6F72 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEB08519AF694B00CF6F72 /* PTManagedSynchronisableObject.h */,
+				CDBEB08619AF694B00CF6F72 /* PTManagedSynchronisableObject.m */,
+				CDBEB08E19AF698800CF6F72 /* PTManagedJoggingEntry.h */,
+				CDBEB08F19AF698800CF6F72 /* PTManagedJoggingEntry.m */,
+				CDBEB06919AF306900CF6F72 /* PTManagedUser.h */,
+				CDBEB06A19AF306900CF6F72 /* PTManagedUser.m */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		CDBEB07319AF536300CF6F72 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEB07519AF53A400CF6F72 /* PTRefreshTableHeaderView.h */,
+				CDBEB07619AF53A400CF6F72 /* PTRefreshTableHeaderView.m */,
+			);
+			name = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		CDBEB0A019AF884600CF6F72 /* Observing */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEB07019AF444B00CF6F72 /* PTNotificationsNames.h */,
+				CDF3B8B019B4A3F800D3BA85 /* PTNotificationMacros.h */,
+				CDBEB0A119AF89D800CF6F72 /* PTNotificator.h */,
+				CDBEB0A219AF89D800CF6F72 /* PTNotificator.m */,
+			);
+			name = Observing;
+			sourceTree = "<group>";
+		};
+		CDBEB0A419AF9E1400CF6F72 /* JoggingEntryScreens */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEB0A519AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.h */,
+				CDBEB0A619AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.m */,
+				CDBEB0A719AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.xib */,
+				CDF3B8A619B48C3000D3BA85 /* PTJoggingEntryViewController.h */,
+				CDF3B8A719B48C3000D3BA85 /* PTJoggingEntryViewController.m */,
+				CDF3B8A819B48C3000D3BA85 /* PTJoggingEntryViewController.xib */,
+				CDF3B8AB19B48CF500D3BA85 /* PTTitledElementView.h */,
+				CDF3B8AC19B48CF500D3BA85 /* PTTitledElementView.m */,
+				CDF3B8AE19B48D0300D3BA85 /* PTTitledElementView.xib */,
+			);
+			name = JoggingEntryScreens;
+			sourceTree = "<group>";
+		};
+		CDBEB0AD19AFD17F00CF6F72 /* PickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				CDBEB0AE19AFD28C00CF6F72 /* PTTimePickerView.h */,
+				CDBEB0AF19AFD28C00CF6F72 /* PTTimePickerView.m */,
+				CDBEB0B119AFD29B00CF6F72 /* PTDistancePickerView.h */,
+				CDBEB0B219AFD29B00CF6F72 /* PTDistancePickerView.m */,
+			);
+			name = PickerViews;
+			sourceTree = "<group>";
+		};
+		CDF3B8B219B4C94B00D3BA85 /* BatchOperations */ = {
+			isa = PBXGroup;
+			children = (
+				CDF3B8B319B4C98100D3BA85 /* PTApiCallBatchOperations.h */,
+				CDF3B8B419B4C98100D3BA85 /* PTApiCallBatchOperations.m */,
+				CDF3B8B619B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.h */,
+				CDF3B8B719B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.m */,
+			);
+			name = BatchOperations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD28087919ACC9AC00EA0131 /* JoggingTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2808A619ACC9AC00EA0131 /* Build configuration list for PBXNativeTarget "JoggingTracker" */;
+			buildPhases = (
+				107A1FCF43CB4C2599999DB7 /* Check Pods Manifest.lock */,
+				CD28087619ACC9AC00EA0131 /* Sources */,
+				CD28087719ACC9AC00EA0131 /* Frameworks */,
+				CD28087819ACC9AC00EA0131 /* Resources */,
+				B84E3B82B3E34462B54648C4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JoggingTracker;
+			productName = JoggingTracker;
+			productReference = CD28087A19ACC9AC00EA0131 /* JoggingTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD28089419ACC9AC00EA0131 /* JoggingTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2808A919ACC9AC00EA0131 /* Build configuration list for PBXNativeTarget "JoggingTrackerTests" */;
+			buildPhases = (
+				CD28089119ACC9AC00EA0131 /* Sources */,
+				CD28089219ACC9AC00EA0131 /* Frameworks */,
+				CD28089319ACC9AC00EA0131 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD28089B19ACC9AC00EA0131 /* PBXTargetDependency */,
+			);
+			name = JoggingTrackerTests;
+			productName = JoggingTrackerTests;
+			productReference = CD28089519ACC9AC00EA0131 /* JoggingTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD28087219ACC9AC00EA0131 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Plamen Terziev";
+				TargetAttributes = {
+					CD28089419ACC9AC00EA0131 = {
+						TestTargetID = CD28087919ACC9AC00EA0131;
+					};
+				};
+			};
+			buildConfigurationList = CD28087519ACC9AC00EA0131 /* Build configuration list for PBXProject "JoggingTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD28087119ACC9AC00EA0131;
+			productRefGroup = CD28087B19ACC9AC00EA0131 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD28087919ACC9AC00EA0131 /* JoggingTracker */,
+				CD28089419ACC9AC00EA0131 /* JoggingTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD28087819ACC9AC00EA0131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1E3AF319B5C1D900549548 /* PTFilterViewController.xib in Resources */,
+				CD28088819ACC9AC00EA0131 /* InfoPlist.strings in Resources */,
+				CD2A629419AE05AF00417B77 /* PTHomeViewController.xib in Resources */,
+				CD28089019ACC9AC00EA0131 /* Images.xcassets in Resources */,
+				CDF3B8AF19B48D0300D3BA85 /* PTTitledElementView.xib in Resources */,
+				CD1E3B0719B60AF200549548 /* PTReportCell.xib in Resources */,
+				CDBD79C719ACD98F007C9B62 /* PTLoginViewController.xib in Resources */,
+				CDBEB0A919AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.xib in Resources */,
+				CDBEB09E19AF7F2A00CF6F72 /* PTJoggingEntryCell.xib in Resources */,
+				CDF3B8AA19B48C3000D3BA85 /* PTJoggingEntryViewController.xib in Resources */,
+				CD2A62A219AE26EB00417B77 /* PTSignupViewController.xib in Resources */,
+				CD1E3AFF19B5FB8F00549548 /* PTReportViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD28089319ACC9AC00EA0131 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2808A119ACC9AC00EA0131 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		107A1FCF43CB4C2599999DB7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B84E3B82B3E34462B54648C4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD28087619ACC9AC00EA0131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBEB0A319AF89D800CF6F72 /* PTNotificator.m in Sources */,
+				CD1E3B0619B60AF200549548 /* PTReportCell.m in Sources */,
+				CDF3B8B519B4C98100D3BA85 /* PTApiCallBatchOperations.m in Sources */,
+				CD2A62A119AE26EB00417B77 /* PTSignupViewController.m in Sources */,
+				CDF3B8BB19B4D19D00D3BA85 /* PTBatchOperationRequestDetails.m in Sources */,
+				CD2A625819ADBD4E00417B77 /* PTApiCall.m in Sources */,
+				CD2A626619ADD35C00417B77 /* PTPersistenceController.m in Sources */,
+				CD1E3B0A19B60B1D00549548 /* PTCell.m in Sources */,
+				CD1E3B0219B6059400549548 /* PTJoggingEntryReportData.m in Sources */,
+				CDBEB0AC19AFAA3300CF6F72 /* PTGUIDUtils.m in Sources */,
+				CDBEB09D19AF7F2A00CF6F72 /* PTJoggingEntryCell.m in Sources */,
+				CD2A629A19AE10B900417B77 /* PTValidationUtils.m in Sources */,
+				CDF3B8AD19B48CF500D3BA85 /* PTTitledElementView.m in Sources */,
+				CD2A626A19ADD76000417B77 /* PTConstants.m in Sources */,
+				CD2A628819ADF8E400417B77 /* PTApiCallLoginUser.m in Sources */,
+				CD2A625F19ADBF2A00417B77 /* PTRemoteRequestHandler.m in Sources */,
+				CDF3B8A119B46BEE00D3BA85 /* PTApiCallUpdateJoggingEntry.m in Sources */,
+				CDBEB09019AF698800CF6F72 /* PTManagedJoggingEntry.m in Sources */,
+				CDBEB09319AF69DF00CF6F72 /* PTJoggingEntry.m in Sources */,
+				CD2A629D19AE1C5D00417B77 /* PTActivityIndicatorHUD.m in Sources */,
+				CDBD79C619ACD98F007C9B62 /* PTLoginViewController.m in Sources */,
+				CD2A627819ADE22B00417B77 /* PTUser.m in Sources */,
+				CDF3B8A919B48C3000D3BA85 /* PTJoggingEntryViewController.m in Sources */,
+				CDF3B8B819B4CA6300D3BA85 /* PTApiCallBatchOperationConfiguration.m in Sources */,
+				CD08AFC319B06F7D00C87793 /* PTCreatedRemoteObjectResponseData.m in Sources */,
+				CD2A626F19ADD95C00417B77 /* PTLoginController.m in Sources */,
+				CD2A625C19ADBDE600417B77 /* PTApiCallResponseResult.m in Sources */,
+				CDBEB0A819AF9E3A00CF6F72 /* PTJoggingEntryEditViewController.m in Sources */,
+				CD1E3AED19B5B12100549548 /* PTModelSyncScheduler.m in Sources */,
+				CDBEB09619AF6F0500CF6F72 /* PTApiCallFetchJoggingEntries.m in Sources */,
+				CDBEB06E19AF37AF00CF6F72 /* PTPersistenceController+TransientObjectsSupport.m in Sources */,
+				CDBEB08719AF694B00CF6F72 /* PTManagedSynchronisableObject.m in Sources */,
+				CDBD79CC19ACD9C8007C9B62 /* PTUIUtils.m in Sources */,
+				CD2A629319AE05AF00417B77 /* PTHomeViewController.m in Sources */,
+				CD08AFB819B06B0100C87793 /* PTUserLoginResponseData.m in Sources */,
+				CD28088E19ACC9AC00EA0131 /* PTAppDelegate.m in Sources */,
+				CD08AFC919B0ACCB00C87793 /* PTSynchronisableObject.m in Sources */,
+				CD1E3AF619B5C55E00549548 /* PTFilterOptions.m in Sources */,
+				CD2A629719AE0F7C00417B77 /* PTLocalization.m in Sources */,
+				CDBD79CF19ACDA42007C9B62 /* PTMasterViewController.m in Sources */,
+				CD08AFC619B06F8F00C87793 /* PTUpdatedRemoteObjectResponseData.m in Sources */,
+				CDBEB0B619AFD4CA00CF6F72 /* PTStringUtils.m in Sources */,
+				CDBEB06B19AF306900CF6F72 /* PTManagedUser.m in Sources */,
+				CDBEB0B319AFD29B00CF6F72 /* PTDistancePickerView.m in Sources */,
+				CD08AFB219B0678A00C87793 /* PTApiCallCreateJoggingEntry.m in Sources */,
+				CD1E3AFA19B5F60200549548 /* PTDateUtils.m in Sources */,
+				CD1E3AFE19B5FB8F00549548 /* PTReportViewController.m in Sources */,
+				CDBD79D219ACDAC6007C9B62 /* PTContainerViewController.m in Sources */,
+				CD2A627F19ADE6ED00417B77 /* PTObjectsMappingFactory.m in Sources */,
+				CD2A626319ADD34100417B77 /* PTModelController.m in Sources */,
+				CD2A627B19ADE3DB00417B77 /* PTUserDefaultSettings.m in Sources */,
+				CD08AFB919B06B0100C87793 /* PTUserSignupResponseData.m in Sources */,
+				CD2A628519ADF8D700417B77 /* PTApiCallSignupUser.m in Sources */,
+				CD2A628B19ADFE3200417B77 /* PTApiCallsUtils.m in Sources */,
+				CD08AFBF19B06C9200C87793 /* PTJoggingEntryRequestDetails.m in Sources */,
+				CD1E3AF219B5C1D900549548 /* PTFilterViewController.m in Sources */,
+				CDBD79D519ACE0B7007C9B62 /* PTFormViewController.m in Sources */,
+				CDBEB06719AF2FF300CF6F72 /* JoggingTracker.xcdatamodeld in Sources */,
+				CDBEB0B019AFD28C00CF6F72 /* PTTimePickerView.m in Sources */,
+				CDBEB07719AF53A400CF6F72 /* PTRefreshTableHeaderView.m in Sources */,
+				CD28088A19ACC9AC00EA0131 /* main.m in Sources */,
+				CD08AFC019B06C9200C87793 /* PTUserSignupRequestDetails.m in Sources */,
+				CDF3B8C119B5023C00D3BA85 /* PTErrorResponseData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD28089119ACC9AC00EA0131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1E3B1319B623A900549548 /* ValidationUtilsTests.m in Sources */,
+				CD1E3B1119B61FBB00549548 /* DateUtilsTests.m in Sources */,
+				CD1E3B1719B6593900549548 /* ApiCallsTests.m in Sources */,
+				CD1E3B1519B6261500549548 /* NotificatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD28089B19ACC9AC00EA0131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD28087919ACC9AC00EA0131 /* JoggingTracker */;
+			targetProxy = CD28089A19ACC9AC00EA0131 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD28088619ACC9AC00EA0131 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD28088719ACC9AC00EA0131 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD28089F19ACC9AC00EA0131 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD2808A019ACC9AC00EA0131 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD2808A419ACC9AC00EA0131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD2808A519ACC9AC00EA0131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD2808A719ACC9AC00EA0131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F202BEF65B24E838B9D07D3 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoggingTracker/JoggingTracker-Prefix.pch";
+				INFOPLIST_FILE = "JoggingTracker/JoggingTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD2808A819ACC9AC00EA0131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F202BEF65B24E838B9D07D3 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoggingTracker/JoggingTracker-Prefix.pch";
+				INFOPLIST_FILE = "JoggingTracker/JoggingTracker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CD2808AA19ACC9AC00EA0131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F202BEF65B24E838B9D07D3 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JoggingTracker.app/JoggingTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoggingTracker/JoggingTracker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JoggingTrackerTests/JoggingTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CD2808AB19ACC9AC00EA0131 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F202BEF65B24E838B9D07D3 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JoggingTracker.app/JoggingTracker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JoggingTracker/JoggingTracker-Prefix.pch";
+				INFOPLIST_FILE = "JoggingTrackerTests/JoggingTrackerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD28087519ACC9AC00EA0131 /* Build configuration list for PBXProject "JoggingTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2808A419ACC9AC00EA0131 /* Debug */,
+				CD2808A519ACC9AC00EA0131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2808A619ACC9AC00EA0131 /* Build configuration list for PBXNativeTarget "JoggingTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2808A719ACC9AC00EA0131 /* Debug */,
+				CD2808A819ACC9AC00EA0131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2808A919ACC9AC00EA0131 /* Build configuration list for PBXNativeTarget "JoggingTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2808AA19ACC9AC00EA0131 /* Debug */,
+				CD2808AB19ACC9AC00EA0131 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDBEB06519AF2FF300CF6F72 /* JoggingTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDBEB06619AF2FF300CF6F72 /* JoggingTracker.xcdatamodel */,
+			);
+			currentVersion = CDBEB06619AF2FF300CF6F72 /* JoggingTracker.xcdatamodel */;
+			path = JoggingTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD28087219ACC9AC00EA0131 /* Project object */;
+}

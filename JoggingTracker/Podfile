@@ -1,0 +1,6 @@
+platform :ios, '7.0'
+pod 'RestKit', '~>  0.23.3'
+pod 'MBProgressHUD', '~> 0.9'
+pod 'UIAlertView+Block', '~> 1.1'
+pod 'UIActionSheet+Block', '~> 1.0.0'
+pod 'Reachability', '~> 3.1.1'

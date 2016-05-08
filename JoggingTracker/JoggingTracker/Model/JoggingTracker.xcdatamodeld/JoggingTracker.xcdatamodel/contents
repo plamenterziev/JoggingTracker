@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PTManagedJoggingEntry" representedClassName="PTManagedJoggingEntry" parentEntity="PTManagedSynchronisableObject" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="weekDate" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="PTManagedSynchronisableObject" representedClassName="PTManagedSynchronisableObject" isAbstract="YES" syncable="YES">
+        <attribute name="clientSideObjectID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="serverSideObjectID" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="syncStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="PTManagedUser" representedClassName="PTManagedUser" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PTManagedJoggingEntry" positionX="-414" positionY="20" width="162" height="105"/>
+        <element name="PTManagedSynchronisableObject" positionX="-416" positionY="-142" width="128" height="120"/>
+        <element name="PTManagedUser" positionX="-173" positionY="18" width="128" height="75"/>
+    </elements>
+</model>
